@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptFlow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="toolbar">
+        <button id="addNode">+ Thêm bước</button>
+        <button id="saveWorkflow">Lưu Workflow</button>
+        <button id="loadWorkflow">Tải Workflow</button>
+    </div>
+    <div id="canvasContainer">
+        <svg id="connections"></svg>
+        <div id="canvas"></div>
+    </div>
+
+    <div id="modal" class="hidden">
+        <div id="modalContent">
+            <label>Tiêu đề:<br><input type="text" id="nodeTitle"></label>
+            <label>Nội dung Prompt:<br><textarea id="nodeContent"></textarea></label>
+            <div class="modal-actions">
+                <button id="saveNode">Lưu</button>
+                <button id="cancelNode">Hủy</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
